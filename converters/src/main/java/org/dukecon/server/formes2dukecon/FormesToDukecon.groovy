@@ -20,15 +20,15 @@ class FormesToDukecon {
                 homeUrl: "file:...",
                 startDate: LocalDate.now()
         )
-        RawDataResources rawDataResources = new RawDataResources([eventsData: 'https://www.javaland.eu/api/schedule/programm/jl.php?key=TestJL&id=527880'])
-        RawDataMapper rawDataMapper = new DoagJsonMapper(rawDataResources)
-        rawDataMapper.initMapper()
-        DoagDataExtractor doagDataExtractor = new DoagDataExtractor(conferenceConfig, rawDataMapper, new DummySpeakerImageService())
-        Conference conference = doagDataExtractor.conference
-        ObjectMapper objectMapper = new ObjectMapper()
-        File json = new File("conference.json")
-        objectMapper.writeValue(json, conference);
-        println json.absolutePath
+//        RawDataResources rawDataResources = new RawDataResources([eventsData: 'https://www.javaland.eu/api/schedule/programm/jl.php?key=TestJL&id=527880'])
+//        RawDataMapper rawDataMapper = new DoagJsonMapper(rawDataResources)
+//        rawDataMapper.initMapper()
+//        DoagDataExtractor doagDataExtractor = new DoagDataExtractor(conferenceConfig, rawDataMapper, new DummySpeakerImageService())
+//        Conference conference = doagDataExtractor.conference
+//        ObjectMapper objectMapper = new ObjectMapper()
+//        File json = new File("conference.json")
+//        objectMapper.writeValue(json, conference);
+//        println json.absolutePath
 
     }
 }
