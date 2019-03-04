@@ -1,6 +1,7 @@
 package org.dukecon.server.formes2dukecon
 
 import com.fasterxml.jackson.databind.ObjectMapper
+import groovy.transform.CompileStatic
 import org.dukecon.model.Conference
 import org.dukecon.server.conference.ConferencesConfiguration
 import org.dukecon.server.repositories.RawDataMapper
@@ -10,6 +11,8 @@ import org.dukecon.server.repositories.doag.DoagJsonMapper
 
 import java.time.LocalDate
 
+
+@CompileStatic
 class FormesToDukecon {
     public static void main(String[] args) {
         ConferencesConfiguration.Conference conferenceConfig = new ConferencesConfiguration.Conference (
